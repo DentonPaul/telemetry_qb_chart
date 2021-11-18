@@ -263,7 +263,7 @@ class App extends React.Component {
             <li>If there is anything else you would like to see, please let me know.</li>
           </ul>
           
-          <h4>Let me know what you think, thanks!</h4>
+          <h4>Let me know what you think. Thanks!</h4>
 
       </div>
 
