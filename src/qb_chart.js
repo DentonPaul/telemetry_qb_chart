@@ -87,7 +87,7 @@ const nfl_colors = {
   "CLE": {"border": "#22150C", "fill": "#FB4F14", },
   "DET": {"border": "#046EB4", "fill": "#B0B7BC", },
   "IND": {"border": "#003D79", "fill": "#FFFFFF", },
-  "LA": {"border": "#002147", "fill": "#95774C", },
+  "LA": {"border": "#003594", "fill": "#FFA300", },
   "NE": {"border": "#0A2342", "fill": "#C81F32", },
   "NYJ": {"border": "#203731", "fill": "#FFFFFF", },
   "PIT": {"border": "#000000", "fill": "#FFC20E", },
