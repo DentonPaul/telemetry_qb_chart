@@ -258,7 +258,8 @@ class App extends React.Component {
           <ul>
             <li>All statistics are displayed as <b>score_percentile</b>.</li>
             <li>Points that are zeros correspond with that player not meeting the threshold for that statistic on that specific week.</li>
-            <li>Code repository: </li>
+            <li>Code repository: <a href="https://github.com/DentonPaul/telemetry_qb_chart" target="_blank">Click Here</a></li>
+            <li>This app is hosted on AWS Amplify.</li>
             <li>If there is anything else you would like to see, please let me know.</li>
           </ul>
           
