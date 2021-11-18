@@ -152,6 +152,10 @@ class App extends React.Component {
     };
   }
 
+  componentDidMount(){
+    document.title = "Telemetry App";
+  }
+
   changeMetric(event) {
     let key;
     if (event.target.value.includes('_')) {
