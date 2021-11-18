@@ -184,18 +184,6 @@ class App extends React.Component {
       },
       maintainAspectRatio: true,
       scales: {
-        yAxes: [{
-          scaleLabel: {
-            display: true,
-            labelString: 'percentile'
-          }
-        }],
-        xAxes: [{
-          scaleLabel: {
-            display: true,
-            labelString: 'x_axis'
-          }
-        }],
       }
 
     };
