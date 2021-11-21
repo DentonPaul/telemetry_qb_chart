@@ -2,10 +2,12 @@ import React from 'react';
 import { Line } from 'react-chartjs-2';
 import player_scores from './player_scores_telemetry.json';
 
+// filter to QBs only
 const QB_data = player_scores.filter(function(item) {
   return item.pos_group === "QB";
 });
 
+// get QB data for 2021 season
 function getQBStatData(arr, stat, player_name) {
   var x = arr.filter(function(item) {
     return (item.player_name === player_name);
@@ -38,10 +40,12 @@ function getQBStatData(arr, stat, player_name) {
   return stat_list;
 }
 
+// return unique values in liast
 function onlyUnique(value, index, self) {
   return self.indexOf(value) === index;
 }
 
+// get all QB names
 function getQBList() {
   var qb_list = [];
   for (var i = 0; i < QB_data.length; i++) {
@@ -51,6 +55,7 @@ function getQBList() {
   return qb_list.filter(onlyUnique);
 };
 
+// get the team of a player
 function getTeam(data, player_name) {
   var player = data.filter(function(item) {
     return item.player_name===player_name;
@@ -105,6 +110,7 @@ const nfl_colors = {
   "TB": {"border": "#D40909", "fill": "#B0B9BF",}
 };
 
+// create line data for each QB for each Stat
 var d = {};
 var QB_list = getQBList();
 for(var i = 0; i<QB_list.length; i++) {
@@ -140,6 +146,7 @@ for(var i = 0; i<QB_list.length; i++) {
 
 const lineData = d['Aaron Rodgersqb_accuracy_overall'];
 
+// define App
 class App extends React.Component {
 
   constructor(props) {
@@ -156,6 +163,7 @@ class App extends React.Component {
     document.title = "Telemetry App";
   }
 
+  // change line data
   changeMetric(event) {
     let key;
     if (event.target.value.includes('_')) {
